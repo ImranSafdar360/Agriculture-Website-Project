@@ -1,0 +1,335 @@
+/* Fonts */
+
+@font-face {
+  font-family: GilroyLight;
+  src: url(/Fonts/gilroy-free/Gilroy-FREE/Gilroy-Light.otf);
+}
+@font-face {
+  font-family: GilroyBold;
+  src: url(/Fonts/gilroy-free/Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: MachinaLight;
+  src: url(/Fonts/Machina-font/659dbdfd5a080be8d348316f_PPNeueMachina_\ Light.ttf);
+}
+@font-face {
+  font-family: MachinaBold;
+  src: url(/Fonts/Machina-font/659dbdfd5a080be8d348316e_PP\ Neue\ Machina\ Inktrap\ Medium.ttf);
+}
+
+/* Colors */
+
+:root {
+  --primary-color: #141b23;
+  --secondary-color: #ffffff;
+  --bg-color: #0d9644;
+  --service-s-color: #f8f7f0;
+  --footer-color: #24231d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  scroll-behavior: smooth;
+}
+.home-about {
+  height: 50vh !important;
+}
+#about-hero {
+  width: 100%;
+  height: 50vh;
+  margin-top: 5%;
+  background-image: url(/Images/service-hero.jpg) !important;
+  background-size: cover;
+  background-position: center;
+}
+#about-hero-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw 0;
+  background-image: url(/Images/__after.png);
+  color: var(--secondary-color);
+}
+#about-hero-content h1 {
+  font-family: GilroyLight;
+  font-weight: 900;
+  font-size: 5vw;
+}
+#about-hero-content h6 {
+  font-family: GilroyLight;
+  font-weight: 300;
+  font-size: 1.5vw;
+}
+#about-hero-content h6 a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+
+/* work-section */
+
+#work-section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+#company {
+  width: 100%;
+  min-height: 20vh;
+  background-color: var(--service-s-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 4vw;
+}
+#company img {
+  width: 10vw;
+}
+#work-image {
+  width: 100%;
+  min-height: inherit;
+  background-image: url(/Images/work-image.jpg);
+  background-size: cover;
+}
+#work-content {
+  width: 100%;
+  min-height: inherit;
+  background-image: url(/Images/__after.png);
+  color: var(--secondary-color);
+  padding: 8vw 13vw;
+}
+#work-content h1 {
+  font-family: GilroyLight;
+  font-weight: 900;
+  font-size: 5vw;
+}
+#work-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0 3vw;
+  position: absolute;
+  bottom: -56.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.w-card {
+  width: 22%;
+  height: 50vh;
+  background-image: url(/Images/w-card1.png);
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+#w-card2 {
+  background-image: url(/Images/w-card2.png) !important;
+}
+#w-card3 {
+  background-image: url(/Images/w-card3.png) !important;
+}
+#w-card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+#w-card-content h3 {
+  font-family: GilroyLight;
+  font-weight: 900;
+  font-size: 1.5vw;
+  margin-top: 0.8vw;
+}
+#growth-section {
+  width: 100%;
+  min-height: 150vh;
+  background-color: var(--secondary-color);
+  display: flex;
+  padding: 5vw 13vw;
+  padding-top: 30vw;
+}
+#growth-image {
+  width: 40%;
+  min-height: 50vh;
+  background-image: url(/Images/growth-image.png);
+  background-size: cover;
+}
+#growth-content {
+  width: 60%;
+  min-height: 50vh;
+  padding: 3vw;
+}
+#growth-content h4 {
+  font-family: MachinaBold;
+  font-weight: 900;
+  font-size: 2vw;
+  margin-bottom: 1vw;
+  color: var(--bg-color);
+}
+#growth-content h2 {
+  font-family: GilroyLight;
+  font-weight: 900;
+  font-size: 3vw;
+  margin-bottom: 1vw;
+  color: var(--primary-color);
+}
+#growth-content p {
+  font-family: GilroyLight;
+  font-weight: 300;
+  font-size: 1.3vw;
+  margin-bottom: 1vw;
+  color: var(--primary-color);
+}
+#g-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 3vw;
+  margin-top: 5vw;
+}
+#g-cards > .g-card {
+  width: 23%;
+  height: 20vh;
+  background-image: url(/Images/g-card1.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.g-card img {
+  width: 4vw;
+}
+#g-card1 {
+  background-image: url(/Images/g-card2.png) !important;
+}
+#g-card2 {
+  background-image: url(/Images/g-card3.png) !important;
+}
+
+/* Media-Quries */
+
+@media screen and (max-width: 576px) {
+  #about-hero {
+    height: 40vh;
+  }
+  #about-hero-content h1 {
+    font-size: 10vw;
+  }
+  #about-hero-content h6 {
+    font-size: 4vw;
+  }
+  #about-hero-content h6 a {
+    font-size: 5vw;
+  }
+  #work-section {
+    min-height: 50vh;
+  }
+  #company img {
+    width: 15vw;
+  }
+  #work-image {
+    min-height: 50vh;
+  }
+  #work-content h1 {
+    font-size: 9vw;
+  }
+  #work-card {
+    display: none;
+  }
+  #growth-section {
+    min-height: 80vh;
+    flex-direction: column;
+    padding: 10vw 5vw;
+  }
+  #growth-image {
+    width: 100%;
+  }
+  #growth-content {
+    width: 100%;
+    margin-top: 5vw;
+  }
+  #growth-content h4 {
+    font-size: 4vw;
+  }
+  #growth-content h2 {
+    font-size: 7vw;
+    margin-bottom: 3vw;
+  }
+  #growth-content p {
+    font-size: 3vw;
+  }
+  .g-card {
+    width: 50% !important;
+    height: 20vh !important;
+  }
+  .g-card img {
+    width: 10vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  #about-hero-content h1 {
+    font-size: 8vw;
+  }
+  #about-hero-content h6 {
+    font-size: 3vw;
+  }
+  #about-hero-content h6 a {
+    font-size: 4vw;
+  }
+  #company img{
+    width: 15vw;
+  }
+  #work-image{
+    min-height: 50vh;
+  }
+  #work-card{
+    bottom: -10%;
+  }
+  .w-card{
+    width: 30%;
+    height: 30vh;
+  }
+  #w-card-content h3{
+    font-size: 3vw;
+  }
+  #growth-section{
+    min-height: 50vh;
+    padding: 10vw 5vw;
+  }
+  #growth-content h4{
+    font-size: 3.5vw;
+  }
+  #growth-content h2{
+    font-size: 4vw;
+  }
+  #growth-content p{
+    font-size: 2vw;
+  }
+  .g-card{
+    width: 40% !important;
+    height: 20vh !important;
+  }
+  .g-card img{
+    width: 8vw;
+  }
+}

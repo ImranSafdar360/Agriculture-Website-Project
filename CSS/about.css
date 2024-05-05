@@ -1,0 +1,493 @@
+/* Fonts */
+
+@font-face {
+    font-family: GilroyLight;
+    src: url(/Fonts/gilroy-free/Gilroy-FREE/Gilroy-Light.otf);
+  }
+  @font-face {
+    font-family: GilroyBold;
+    src: url(/Fonts/gilroy-free/Gilroy-FREE/Gilroy-ExtraBold.otf);
+  }
+  
+  @font-face {
+    font-family: MachinaLight;
+    src: url(/Fonts/Machina-font/659dbdfd5a080be8d348316f_PPNeueMachina_\ Light.ttf);
+  }
+  @font-face {
+    font-family: MachinaBold;
+    src: url(/Fonts/Machina-font/659dbdfd5a080be8d348316e_PP\ Neue\ Machina\ Inktrap\ Medium.ttf);
+  }
+  
+  /* Colors */
+  
+  :root {
+    --primary-color: #141b23;
+    --secondary-color: #ffffff;
+    --bg-color: #0d9644;
+    --service-s-color: #f8f7f0;
+    --footer-color: #24231d;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body{
+    scroll-behavior: smooth;
+  }
+  .home-about{
+    height: 50vh !important;
+  }
+#about-hero{
+    width: 100%;
+    height: 50vh;
+    margin-top: 5%;
+    background-image: url(/Images/about-hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#about-hero-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw 0;
+    background-image: url(/Images/__after.png);
+    color: var(--secondary-color);
+}
+#about-hero-content h1{
+    font-family: GilroyLight;
+    font-weight: 900;
+    font-size: 5vw;
+}
+#about-hero-content h6{
+    font-family: GilroyLight;
+    font-weight: 300;
+    font-size: 1.5vw;
+}
+#about-hero-content h6 a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+#introduction-section{
+    width: 100%;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.both-about{
+    width: 100%;
+    display: flex;
+}
+#about-intro{
+    width: 50%;
+    height: 50%;
+    padding: 5vw;
+}
+#about-intro h3{
+    font-family: GilroyLight;
+    font-weight: 300;
+    font-size: 2vw;
+    color: var(--bg-color);
+    margin-bottom: 1vw;
+    border-left: 3px solid var(--bg-color);
+    padding-left: 1vw;
+}
+#about-intro h1{
+    font-family: GilroyLight;
+    font-weight: 300;
+    font-size: 5vw;
+    color: var(--primary-color);
+}
+#intro-content{
+    width: 50%;
+    height: 50%;
+    padding: 5vw;
+}
+#intro-content p{
+    font-family: GilroyLight;
+    font-weight: 100;
+    font-size: 1.4vw;
+}
+#about-card{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    padding: 5vw;
+}
+.a-card{
+    width: 25vw;
+    height: 33vw;
+}
+.a-card>img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+#a-card-content{
+    width: 100%;
+    height: 40% !important;
+    text-align: center;
+    padding: 3vw;
+    background-color: var(--service-s-color);
+    position: relative;
+}
+#a-card-content>img{
+    position: absolute;
+    object-fit: cover;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#a-card-content h3{
+    font-family: GilroyLight;
+    font-weight: 900;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+#a-card-content p{
+    font-family: GilroyLight;
+    font-weight: 900;
+    font-size: 1vw;
+}
+.a-card:hover{
+cursor: pointer;
+box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.166);
+}
+#objective-section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--service-s-color);
+    padding: 5vw 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: GilroyLight;
+}
+#objective-section>h3{
+    font-family: MachinaBold;
+    font-weight: 300;
+    font-size: 2vw;
+    color: var(--bg-color);
+    margin-bottom: 1vw;
+}
+#objective-section>h1{
+    font-weight: 900;
+    font-size: 3vw;
+    color: var(--primary-color);
+    margin-bottom: 1vw;
+}
+#objective-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 3vw;
+}
+.obj-card{
+    width: 30%;
+    display: flex;
+    gap: 0 2vw;
+    padding: 1vw;
+    margin-top: 3vw;
+}
+.obj-card img{
+    width: 5vw;
+    height: 5vw;
+}
+.obj-c-content h3{
+    font-size: 1.5vw;
+    margin-bottom: .5vw;
+}
+.obj-c-content p{
+    font-size: 1vw;
+}
+
+/* member-section */
+
+#member-section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#member-section>h3{
+    font-family: MachinaBold;
+    font-weight: 300;
+    color: var(--bg-color);
+    font-size: 2vw;
+}
+#member-section h1{
+    font-family: GilroyLight;
+    font-weight: 900;
+    font-size: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+}
+#member-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 3vw;
+}
+.m-card{
+    width: 25%;
+    height: 60vh;
+    background-image: url(/Images/m-card1.png);
+    background-size: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+#m-card-content{
+    width: 60%;
+    height: 15%;
+    border-bottom-right-radius: 5px;
+    background-color: var(--service-s-color);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+#m-card-content h3{
+    font-family: GilroyLight;
+    font-weight: 900;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+}
+#m-card-content h6{
+    font-family: MachinaBold;
+    font-size: 1vw;
+    color: var(--bg-color);
+}
+#m-card-content img{
+    width: 2.5vw;
+    position: absolute;
+    bottom: 20%;
+    right: 90%;
+}
+#m-card2{
+    background-image: url(/Images/m-card3png.jpg);
+}
+#m-card3{
+    background-image: url(/Images/m-card2.png);
+}
+
+/* Media-Quries */
+
+@media screen and (max-width:576px) {
+    #about-hero{
+        height: 40vh;
+    }
+    #about-hero-content h1{
+        font-size: 10vw;
+    }
+    #about-hero-content h6{
+        font-size: 4vw;
+    }
+    #about-hero-content h6 a{
+        font-size: 5vw;
+    }
+    #introduction-section{
+        min-height: 50vh;
+    }
+    .both-about{
+        flex-direction: column;
+    }
+    #about-intro{
+        width: 100%;
+    }
+    #about-intro h3{
+        font-size: 3.5vw;
+        margin-bottom: 3vw;
+    }
+    #about-intro h1{
+        font-size: 8vw !important;
+    }
+    #intro-content p{
+        font-size: 3vw;
+    }
+    #intro-content{
+        width: 100%;
+    }
+    #about-card{
+        flex-direction: column;
+    }
+    .a-card{
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 5vw;
+    }
+    #a-card-content{
+        padding-top: 12vw;
+    }
+    #a-card-content h3{
+        font-size: 7vw;
+    }
+    #a-card-content p{
+        font-size: 3vw;
+    }
+    #objective-section{
+        min-height: 50vh;
+        padding: 15vw 3vw;
+    }
+    #objective-section h3{
+        font-size: 3.5vw;
+    }
+    #objective-section h1{
+        font-size: 7vw;
+    }
+    .obj-card{
+        width: 100%;
+        margin-bottom: 3vw;
+    }
+    .obj-card img{
+        width: 15vw;
+        height: 15vw;
+        margin-right: 3vw;
+    }
+    .obj-c-content h3{
+        font-size: 4.2vw !important;
+        margin-bottom: 3vw;
+    }
+    .obj-c-content p{
+        font-size: 2.6vw;
+    }
+    #member-section{
+        min-height: 80vh;
+        padding: 10vw 5vw;
+    }
+    #member-section h3{
+        font-size: 3.5vw;
+    }
+    #member-section h1{
+        font-size: 7vw;
+        margin-bottom: 6vw;
+    }
+    #member-card{
+        flex-direction: column;
+    }
+    .m-card{
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 5vw;
+    }
+    .m-card img{
+        width: 8vw !important;
+    }
+    #m-card-content h3{
+        font-size: 5vw;
+        margin-top: 3vw;
+    }
+    #m-card-content h6{
+        font-size: 3.5vw;
+    }
+
+}
+@media (min-width: 576px) and (max-width: 992px){
+    #about-hero-content h1{
+        font-size: 8vw;
+    }
+    #about-hero-content h6{
+        font-size: 3vw;
+    }
+    #about-hero-content h6 a{
+        font-size: 4vw;
+    }
+    #introduction-section{
+        min-height: 60vh;
+        padding: 10vw 1vw;
+    }
+    #intro-content{
+        width: 70%;
+    }
+    #intro-content p{
+        font-size: 2vw;
+    }
+    .a-card{
+        width: 30vw;
+        height: 30vh;
+        margin-bottom: 5vw;
+    }
+    #a-card-content{
+        min-height: 20vh;
+        padding-top: 5vw;
+    }
+    #a-card-content h3{
+        font-size: 3vw;
+    }
+    #a-card-content p{
+        font-size: 1.5vw;
+    }
+    #objective-section{
+        min-height: 50vh;
+    }
+    #objective-section>h3{
+        font-size: 3.5vw;
+    }
+    #objective-section>h1{
+        font-size: 5vw;
+    }
+    .obj-card{
+        width: 45%;
+        margin-bottom: 3vw;
+    }
+    .obj-card img{
+        width: 7vw;
+        height: 7vw;
+    }
+    .obj-c-content h3{
+        font-size: 2.5vw;
+        margin-bottom: 1vw;
+    }
+    .obj-c-content p{
+        font-size: 2vw;
+    }
+    #member-section{
+        min-height: 60vh;
+    }
+    #member-section h3{
+        font-size: 3.5vw;
+    }
+    #member-section h1{
+        font-size: 5vw;
+    }
+    #member-card{
+        flex-wrap: wrap;
+    }
+    .m-card{
+        width: 80%;
+        height: 80vh;
+        margin-bottom: 5vw;
+    }
+    #m-card-content h3{
+        font-size: 5vw;
+        margin-top: 3vw;
+    }
+    #m-card-content h6{
+        font-size: 3vw;
+    }
+    #m-card-content img{
+        width: 8vw;
+    }
+}
